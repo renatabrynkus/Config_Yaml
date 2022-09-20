@@ -12,7 +12,7 @@ testScenario:
     tag2: sii
     testRunName: Checking title for siiportal.sii.pl
     expectedTitle: Logowanie na koncie
-    active: true
+    active: false
 
   test2:
     testName: testKotuszkowo
@@ -21,4 +21,4 @@ testScenario:
     tag2: kotuszkowo
     testRunName: Checking title for kotuszkowo.pl
     expectedTitle: Kotuszkowo- blog o kotach
-    active: false
+    active: true

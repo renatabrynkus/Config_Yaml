@@ -14,14 +14,14 @@ public class ApplicationProperties {
 
     public ApplicationProperties() {
         setBrowserProperties();
-        setEnvironmentProperties();
+        setTestScenarioProperties();
     }
 
     public static ApplicationProperties getInstance() {
         return ApplicationPropertiesSingleton.INSTANCE;
     }
 
-    private void setEnvironmentProperties() {
+    private void setTestScenarioProperties() {
         listOfTestScenarios = yamlReader.getConfig().getEnvironment().getListOfTestScenarios();
         boolean foundActiveEnvironment = false;
         for (TestScenarioModel testScenarioModel : listOfTestScenarios) {
